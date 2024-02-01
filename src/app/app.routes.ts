@@ -12,6 +12,4 @@ export const routes: Routes = [
         component: AboutUsViewComponent,
     }
 
-
-
 ];
