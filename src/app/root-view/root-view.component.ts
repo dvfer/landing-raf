@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
-import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { Component} from '@angular/core';
+
 @Component({
-  selector: 'app-root-view',
-  templateUrl: './root-view.component.html',
-  styleUrl: './root-view.component.css',
+    selector: 'app-root-view',
+    templateUrl: './root-view.component.html',
+    styleUrl: './root-view.component.css',
 })
 export class RootViewComponent {
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+
 }
