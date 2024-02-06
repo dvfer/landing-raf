@@ -1,1 +1,17 @@
-<p>product-carousel works!</p>
+<div class="">
+    <p-carousel
+        [value]="products"
+        [showIndicators]="false"
+        [autoplayInterval]="0"
+        [numVisible]="4"
+        [numScroll]="1"
+        [circular]="true">
+        <ng-template let-product pTemplate="item">
+            <div class="box border-1 surface-border border-round m-1 text-center py-5 px-4">
+                <div class="mb-3">
+                    <img src="{{ product.image }}" [alt]="product.name" title="s" class="w-3 shadow-2" >
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+</div>

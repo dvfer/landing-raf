@@ -1,0 +1,24 @@
+
+.box {
+    width: 200px;
+    /* o el ancho que prefieras */
+    height: 200px;
+    display: flex;
+    align-items: center;
+    /* centra verticalmente */
+    justify-content: center;
+    /* altura igual al ancho para hacerlo cuadrado */
+    /* otras propiedades */
+}
+.box img {
+    object-fit: cover;
+    width: 100%;
+    /* ajusta al tamaño deseado, menor que el 100% del card */
+    height: 100%;
+    /* igual que el ancho para mantener la relación de aspecto */
+    /* asegura que la imagen cubra el espacio sin distorsionarse */
+    display: block;
+    /* para permitir el uso de margin: auto */
+    margin: auto;
+    /* centra la imagen dentro del card */
+}

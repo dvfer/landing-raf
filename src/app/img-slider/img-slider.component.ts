@@ -22,11 +22,11 @@ export class ImgSliderComponent {
         lazyLoad: 'ondemand',
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         autoplay: true,
         autoplaySpeed: 1500,
         infinite: true,
-        dots: true,
+        dots: false,
         pauseOnHover: true,
     };
 

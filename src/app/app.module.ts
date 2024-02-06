@@ -13,6 +13,9 @@ import { ContactViewComponent } from './contact-view/contact-view.component';
 
 import { GalleriaModule } from 'primeng/galleria';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { ButtonModule } from 'primeng/button';
+import { TagModule } from 'primeng/tag';
+import { CarouselModule } from 'primeng/carousel';
 
 import { GalleriaComponent } from './galleria/galleria.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -36,6 +39,9 @@ import { ProductCarouselComponent } from './product-carousel/product-carousel.co
         NgbModule,
         GalleriaModule,
         SlickCarouselModule,
+        ButtonModule,
+        TagModule,
+        CarouselModule,
     ],
     providers: [provideClientHydration()],
     bootstrap: [AppComponent],
