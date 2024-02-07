@@ -1,23 +1,46 @@
 <div class="container-fluid">
+    <div class="row">
+        <app-img-slider></app-img-slider>
+    </div>
 
+    <div class="row" id="product-section">
+        <app-product-carousel></app-product-carousel>
+    </div>
 
-   <div class="row">
-     <app-img-slider></app-img-slider>
-   </div>
-
-  <div class="row" id="product-section">
-    <app-product-carousel></app-product-carousel>
-  </div>
-
-  <div class="row" id="info-section">
-
-  </div>
-
-  <div class="row" id="feature-section">
-
-  </div>
-
-  <div class="row" id="contact-section">
-
-  </div>
+    <div class="row" id="info-section"></div>
+    <div class="row" id="feature-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <app-feature-card/>
+                </div>
+                <div class="col-sm">
+                    <app-feature-card/>
+                </div>
+                <div class="col-sm">
+                    <app-feature-card/>
+                </div>
+                <div class="col-sm">
+                    <app-feature-card/>
+                </div>
+                <div class="col-sm">
+                    <app-feature-card/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="contact-section">
+        <div class="container-fluid">
+            <div class="row justify-content-md-center m-3">
+                <p class="h5 text-center">¿Te gusta lo que ves?</p>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-2"></div>
+                <div class="col-md-auto">
+                    <button [routerLink]="'/contacto'" class="btn-rounded">Contáctanos</button>
+                </div>
+                <div class="col col-lg-2"></div>
+            </div>
+        </div>
+    </div>
 </div>

@@ -16,11 +16,13 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
 import { CarouselModule } from 'primeng/carousel';
+import { CardModule } from 'primeng/card';
 
 import { GalleriaComponent } from './galleria/galleria.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ImgSliderComponent } from './img-slider/img-slider.component';
 import { ProductCarouselComponent } from './product-carousel/product-carousel.component';
+import { FeatureCardComponent } from './feature-card/feature-card.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -31,6 +33,7 @@ import { ProductCarouselComponent } from './product-carousel/product-carousel.co
         GalleriaComponent,
         ImgSliderComponent,
         ProductCarouselComponent,
+        FeatureCardComponent,
     ],
     imports: [
         BrowserModule,
@@ -42,6 +45,7 @@ import { ProductCarouselComponent } from './product-carousel/product-carousel.co
         ButtonModule,
         TagModule,
         CarouselModule,
+        CardModule,
     ],
     providers: [provideClientHydration()],
     bootstrap: [AppComponent],

@@ -1,0 +1,23 @@
+.responsive-img {
+    width: 100%;
+    /* Hace que la imagen ocupe el 100% del ancho de su contenedor padre */
+    height: auto;
+    /* Mantiene la relación de aspecto de la imagen */
+    display: block;
+    /* Evita que se añadan espacios adicionales alrededor de la imagen */
+    max-width: 100%;
+    /* Asegura que la imagen no se extienda más allá de su tamaño natural */
+}
+.text-center {
+    text-align: center;
+    /* Centra el texto horizontalmente */
+}
+.custom-card-size {
+    width: 190px;
+    /* Ancho de la card */
+    height: 100%;
+    /* Altura de la card */
+}
+.h7{
+    font-size: smaller
+}
