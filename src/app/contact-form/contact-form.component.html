@@ -1,0 +1,259 @@
+<!-- <div class="">
+    <div class="container-fluid">
+        <h2 class="text-center mb-5">Contacto</h2>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form
+                    [formGroup]="FormData"
+                    (ngSubmit)="onSubmit(FormData.value)"
+                >
+                    <div class="form-group">
+                        <label class="form-control-label-sm" for="fullname">Nombre</label>
+                        <input
+                            type="text"
+                            class="form-control-sm"
+                            name="Fullname"
+                            placeholder="Full Name"
+                            formControlName="Fullname"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Correo</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            name="Email"
+                            aria-describedby="emailHelp"
+                            placeholder="Enter email"
+                            formControlName="Email"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Número</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"
+                                >+569</span
+                            >
+                            <input
+                                maxlength="8"
+                                type="text"
+                                class="form-control"
+                                name="Phone"
+                                placeholder="Phone"
+                                formControlName="Phone"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="region">Región</label>
+
+                        <select
+                            placeholder="Selecciona tu región"
+                            class="form-select form-control"
+                            formControlName="Region"
+                            name="Region"
+                            aria-label="Default select example"
+                        >
+                            <option
+                                value="Selecciona tu región"
+                                disabled="disabled"
+                                selected>
+                                Selecciona tu región
+                            </option>
+
+                            <option value="Región de Arica y Parinacota">
+                                Región de Arica y Parinacota
+                            </option>
+
+                            <option value="Región de Tarapacá">
+                                Región de Tarapacá
+                            </option>
+
+                            <option value="Región de Antofagasta">
+                                Región de Antofagasta
+                            </option>
+
+                            <option value="Región de Atacama">
+                                Región de Atacama
+                            </option>
+
+                            <option value="Región de Coquimbo">
+                                Región de Coquimbo
+                            </option>
+
+                            <option value="Región de Valparaíso">
+                                Región de Valparaíso
+                            </option>
+
+                            <option value="Región Metropolitana de Santiago">
+                                Región Metropolitana de Santiago
+                            </option>
+
+                            <option
+                                value="Región del Libertador General Bernardo O'Higgins"
+                            >
+                                Región del Libertador General Bernardo O'Higgins
+                            </option>
+
+                            <option value="Región del Maule">
+                                Región del Maule
+                            </option>
+
+                            <option value="Región del Biobío">
+                                Región del Biobío
+                            </option>
+
+                            <option value="Región de La Araucanía">
+                                Región de La Araucanía
+                            </option>
+
+                            <option value="Región de Los Ríos">
+                                Región de Los Ríos
+                            </option>
+
+                            <option value="Región de Los Lagos">
+                                Región de Los Lagos
+                            </option>
+
+                            <option
+                                value="Región de Aysén del General Carlos Ibáñez del Campo"
+                            >
+                                Región de Aysén del General Carlos Ibáñez del
+                                Campo
+                            </option>
+
+                            <option
+                                value="Región de Magallanes y de la Antártica Chilena"
+                            >
+                                Región de Magallanes y de la Antártica Chilena
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Dirección">Dirección</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="Address"
+                            placeholder="Dirección"
+                            formControlName="Address"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Mensaje</label>
+                        <textarea
+                            type="text"
+                            class="form-control"
+                            formControlName="Message"
+                            name="Message"
+                            placeholder="place text"
+                        >
+                        </textarea>
+                    </div>
+                    <div class="btn">
+                                            <button
+                        type="submit"
+                        class="btn btn-primary"
+                        [disabled]="!FormData.valid"
+                    >
+                        Submit
+                    </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="container-fluid">
+        <!-- <h2 class="mb-5">Contacto</h2> -->
+    <div class="row">
+        <div class="">
+            <form
+                [formGroup]="FormData"
+                (ngSubmit)="onSubmit(FormData.value)"
+                class="form-width card p-4"
+            >
+                <div class="form-group">
+                    <div class="flex justify-content-center mb-4 mt-1">
+                        <span class="p-float-label">
+                            <input
+                            type="text"
+                            name="Fullname"
+                            pInputText id="Fullname"
+                            formControlName="Fullname"
+                            class="p-inputtext-sm w-100"
+                            />
+                            <label for="Fullname" class="strong">Nombre</label>
+                        </span>
+                    </div>
+                    <div class="flex justify-content-center mb-4 ">
+                        <span class="p-float-label">
+                            <input
+                            type="email"
+                            name="Email"
+                            pInputText id="Email"
+                            formControlName="Email"
+                            class="p-inputtext-sm w-100"
+                            />
+                            <label for="Email">Correo</label>
+                        </span>
+                    </div>
+                    <div class="flex justify-content-center mb-4">
+                    <!-- <div class="input-row mb-4"> -->
+
+                        <!-- <div class="phone mx-1"> -->
+
+                            <span class="p-float-label">
+                                <p-inputMask
+                                name="Phone"
+                                inputStyleClass="width-100"
+                                mask="+56 9 99999999"
+                                formControlName="Phone"
+                                id="Phone"
+                                class="p-inputtext-sm">
+                            </p-inputMask>
+                            <label for="Phone">Celular</label>
+                            </span>
+                        <!-- </div> -->
+                        <!-- <div class="dropdown"> -->
+
+                            </div>
+                                <div class="flex justify-content-center mb-4 ">
+                                    <p-dropdown
+                            styleClass="w-full"
+                            formControlName="Region"
+                            [options]="regiones"
+                            optionLabel="name"
+                            placeholder="Seleccione su región"
+                            class="p-inputtext-sm w-100"
+                            ></p-dropdown>
+                        <!-- </div> -->
+                        </div>
+                        <div class="flex justify-content-center mb-4 ">
+                            <span class="p-float-label">
+                            <input
+                            type="text"
+                            name="Address"
+                            pInputText id="Address"
+                            formControlName="Address"
+                            class="p-inputtext-sm w-100"
+                            />
+                            <label for="Address">Dirección</label>
+                        </span>
+                    </div>
+                    <span class="p-float-label">
+                        <textarea id="float-input" class="w-100" rows="3" cols="30" pInputTextarea formControlName="Message"></textarea>
+                        <label for="float-input">Mensaje</label>
+                    </span>
+
+                </div>
+                <div class="btn">
+
+                    <p-button label="Submit" type="submit" [disabled]="!FormData.valid"></p-button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

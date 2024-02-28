@@ -1,0 +1,11 @@
+.form-width {
+    width: 100%;
+}
+:host ::ng-deep .width-100 {
+    width: 100%;
+}
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    /* Esto añade espacio entre los inputs */
+}

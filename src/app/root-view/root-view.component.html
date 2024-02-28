@@ -1,46 +1,44 @@
+<app-img-slider></app-img-slider>
 <div class="container-fluid">
-    <div class="row">
-        <app-img-slider></app-img-slider>
+    <div class="row mb-2  p-4 " id="info-section">
+            <div class="col-md-7 col-sm-12 mb-3 mb-md-0 animate__animated animate__slideInLeft container-fluid">
+                <div class="row">
+                    <p class="h3  lead">Conectamos mundos, traemos oportunidades</p>
+                </div>
+                <div class="row">
+                        <p class="">Somos... Lorem ipsum dolor sit amet consectetur adipisicing elit. In earum odit nostrum officia vitae distinctio libero maxime quis est aperiam? Quasi, veritatis sequi eius quos provident iure accusamus quas voluptate?</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-7">
+                        <button type="button" [routerLink]="'/nosotros'"   class="btn btn-secondary">Conócenos más</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-12 animate__animated animate__slideInRight">
+                <app-img-slider [slides]="imgList" [slideConfig]="config"></app-img-slider>
+            </div>
     </div>
-
-    <div class="row" id="product-section">
+    <div class="row mb-5"  id="product-section">
+        <p class="h5 text-center">Productos con los que trabajamos</p>
         <app-product-carousel></app-product-carousel>
     </div>
-
-    <div class="row" id="info-section"></div>
-    <div class="row" id="feature-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <app-feature-card/>
-                </div>
-                <div class="col-sm">
-                    <app-feature-card/>
-                </div>
-                <div class="col-sm">
-                    <app-feature-card/>
-                </div>
-                <div class="col-sm">
-                    <app-feature-card/>
-                </div>
-                <div class="col-sm">
-                    <app-feature-card/>
-                </div>
-            </div>
-        </div>
+    <div class="row mb-5"  id="feature-section">
+       <app-feature-section></app-feature-section>
     </div>
-    <div class="row" id="contact-section">
-        <div class="container-fluid">
-            <div class="row justify-content-md-center m-3">
-                <p class="h5 text-center">¿Te gusta lo que ves?</p>
+<!--    <div class="row">-->
+<!--        <app-feature-alt  ></app-feature-alt>-->
+<!--    </div>-->
+    <hr>
+    <div class="row mb-5" id="contact-section">
+
+            <div class="col-12 text-center mb-3">
+                <p class="h3 ">¿Te gusta lo que ves?</p>
             </div>
-            <div class="row justify-content-md-center">
-                <div class="col col-lg-2"></div>
-                <div class="col-md-auto">
-                    <button [routerLink]="'/contacto'" class="btn-rounded">Contáctanos</button>
-                </div>
-                <div class="col col-lg-2"></div>
+            <div class="col-12 text-center">
+                <button [routerLink]="'/contacto'" class="btn btn-rounded">Contáctanos</button>
             </div>
-        </div>
+
+
     </div>
 </div>
+<app-footer></app-footer>

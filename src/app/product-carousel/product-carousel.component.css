@@ -1,8 +1,8 @@
 
 .box {
-    width: 200px;
+    width: 100px;
     /* o el ancho que prefieras */
-    height: 200px;
+    height: 100px;
     display: flex;
     align-items: center;
     /* centra verticalmente */

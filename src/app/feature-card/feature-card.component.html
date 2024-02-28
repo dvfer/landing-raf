@@ -7,8 +7,11 @@
     </p>
 </p-card> -->
 
-        <div class="card">
-            <img src="{{img}}" class="img-fluid" alt="...">
+        <div *ngIf="type=='url';else elseBlock">
+            <div class=" text-center flex-container">
+
+                <img src="{{img}}"  class="img-fluid feature-image {{type}}" alt="...">
+            </div>
             <div class="card-body text-center">
                 <p class="h6"> {{header}} </p>
                 <p class="h7"> {{body}} </p>
@@ -16,3 +19,13 @@
             </div>
         </div>
 
+
+    <ng-template #elseBlock>
+        <div class="card-body text-center flex-container">
+            <i class="{{ img }} svg"></i>
+        </div>
+        <div class="card-body text-center">
+            <p class="h6"> {{header}} </p>
+            <p class="h7"> {{body}} </p>
+        </div>
+    </ng-template>

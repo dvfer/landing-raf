@@ -1,0 +1,17 @@
+
+.card-container {
+    display: flex;
+
+}
+
+:root {
+    --primary-color: #0D47A1;
+}
+
+.card {
+    border-color: var(--primary-color);
+}
+.card:hover{
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+}

@@ -2,14 +2,46 @@
     border-radius: 50px;
     /* Ajusta este valor para obtener la curvatura deseada */
     /* Ejemplo: Espaciado interno */
-    border: 1px solid #007bff;
+    border: 1px solid #34495e;
     /* Ejemplo: Color del borde */
-    background-color: #007bff;
+    background-color: #34495e;
     /* Ejemplo: Color de fondo */
     color: white;
     /* Ejemplo: Color del texto */
     cursor: pointer;
     /* Cambia el cursor a una mano cuando se pasa el mouse */
-padding: 15px 30px;
+    padding: 15px 30px;
 }
+
+/*.element{*/
+    /*linear-gradient(120.06deg,var(--e-global-color-secondary) -1.34%,var(--e-global-color-text) 103.75%)*/
+/*}*/
+.element{
+    background: linear-gradient(120.06deg,#34495e -1.34%,#a7c0cd 103.75%);
+    border-radius:0 277px 277px 0;
+}
+.element-reverse {
+    background: linear-gradient(120.06deg,#34495e -1.34%,#a7c0cd 103.75%);
+    border-radius:277px 0 0 277px;
+}
+.element-spiked:after {
+
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px; /* Ajusta el ancho */
+        height: 25px; /* Ajusta el alto */
+        background-color: #34495e;
+        clip-path: polygon(0% 0%, 100% 0%, 75% 50%, 100% 100%, 0% 100%);
+        border-radius: 2px;
+
+
+}
+
+/*@media (max-width: 767px) { !* Punto de ruptura para smartphones, puedes modificarlo *!*/
+/*    .row {*/
+/*        flex-direction: column;*/
+/*    }*/
+/*}*/
 

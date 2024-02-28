@@ -1,0 +1,18 @@
+<div class="container">
+    <p class="h3 text-center">Pero... ¿Por qué nosotros?</p>
+
+    <div class="row grid-container ">
+
+        <div class="col-sm-6 col-md-4 col-lg-3 card-container " *ngFor="let feature of features">
+            <div class="card h-100 w-100 border-color shadow">
+                <app-feature-card
+                    [img]="feature.img"
+                    [type]="feature.type"
+                    [header]="feature.header"
+                    [body]="feature.body">
+
+                </app-feature-card>
+            </div>
+        </div>
+    </div>
+</div>

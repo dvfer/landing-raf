@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 @Component({
     selector: 'app-img-slider',
@@ -6,7 +6,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     styleUrl: './img-slider.component.css',
 })
 export class ImgSliderComponent {
-    slides = [
+    @Input() slides = [
         {
             img: 'https://globalve.cl/wp-content/uploads/2023/08/Banner-principal-nuevo-Global_Banner-1.jpg.png',
         },
@@ -18,7 +18,7 @@ export class ImgSliderComponent {
         },
     ];
     hidden = true;
-    slideConfig = {
+    @Input() slideConfig = {
         lazyLoad: 'ondemand',
         slidesToShow: 1,
         slidesToScroll: 1,
